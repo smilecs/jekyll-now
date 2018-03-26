@@ -1,7 +1,7 @@
 title: Smile Egbai
 description: > # this means to ignore newlines until "baseurl:"
   Android developer with 4+ years experience, have knowledge of kotlin, java and golang.
-baseurl: "https://medium.com/@SmileEgbai"# the subpath of your site, e.g. /blog
+baseurl: "https://medium.com/@SmileEgbai" # the subpath of your site, e.g. /blog
 url: "https://medium.com/@SmileEgbai" # the base hostname & protocol for your site, e.g. http://example.com
 permalink: ':title/'
 blog_theme: dark # Or use dark
