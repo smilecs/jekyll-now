@@ -1,89 +1,50 @@
-#
-# This file contains configuration flags to customize your site
-#
+title: Smile Egbai
+description: > # this means to ignore newlines until "baseurl:"
+  Android developer with 4+ years experience, have knowledge of kotlin, java and golang.
+baseurl: # the subpath of your site, e.g. /blog
+url: "https://smilecs.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+permalink: ':title/'
+blog_theme: dark # Or use dark
 
-# Name of your site (displayed in the header)
+# Profile information
 name: Smile Egbai
+tagline: Android Developer
+about-description: Enthusiastic mobile developer, I love to solve challenges and provide value to people around me. I love novels(sci-fi) my favourites authors are J.k Rowling, Lori M and Patrick Rothfuss. Movies are welcome and play games(Fifa & Call of Duty). I think big and want to make a difference, it's not all about the code but the problem you can solve.
+pic: img.jpg  # Place a 200x200 picture inside /assets/img/ folder and provide the name of the file below
 
-# Short bio or description (displayed in the header)
-description: Android Developer from Nigeria
+# Contact links
+email: mumene@gmail.com # Add your Email address
+phone: # Add your Phone number
+website: # Add your website, do not add http://
+linkedin: smilecs
+github: smilecs
+twitter: '@SmileEgbai' # Add your Twitter handle
 
-# URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://www.dropbox.com/s/2ji4ka7iozyt06w/img.jpg?dl=0
+# Tracker
+analytics: UA-76641307-2
 
-#
-# Flags below are optional
-#
+# Comments
+discus-identifier: # Add your Disqus identifier
 
-# Includes an icon in the footer for each username you enter
-footer-links:
-  dribbble:
-  email: mumene@gmail.com
-  facebook:
-  flickr:
-  github: https://github.com/smilecs
-  instagram:
-  linkedin: https://www.linkedin.com/in/smilecs/
-  pinterest:
-  medium: https://medium.com/@SmileEgbai
-  rss: # just type anything here for a working RSS icon
-  twitter: SmileEgbai
-  stackoverflow: users/2656461/smilecs
-  youtube: # channel/<your_long_string> or user/<user-name>
-  googleplus: # anything in your profile username that comes after plus.google.com/
+# Important settings
+assets:
+  sources:
+    - assets/fonts
+    - assets/img
+    - assets/js
+    - assets/stylesheets
 
-
-# Enter your Disqus shortname (not your username) to enable commenting on posts
-# You can find your shortname on the Settings page of your Disqus account
-disqus:
-
-# Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-google_analytics: UA-76641307-2
-
-# Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
-# Used for Sitemap.xml and your RSS feed
-url: https://smilecs.github.io
-
-# If you're hosting your site at a Project repository on GitHub pages
-# (http://yourusername.github.io/repository-name)
-# and NOT your User repository (http://yourusername.github.io)
-# then add in the baseurl here, like this: "/repository-name"
-baseurl: ""
-
-remote_theme: artemsheludko/monday
-
-#
-# !! You don't need to change any of the configuration flags below !!
-#
-
-permalink: /:title/
-
-# The release of Jekyll Now that you're using
-version: v1.2.0
-
-# Jekyll 3 now only supports Kramdown for Markdown
-kramdown:
-  # Use GitHub flavored markdown, including triple backtick fenced code blocks
-  input: GFM
-  # Jekyll 3 and GitHub Pages now only support rouge for syntax highlighting
-  syntax_highlighter: rouge
-  syntax_highlighter_opts:
-    # Use existing pygments syntax highlighting css
-    css_class: 'highlight'
-
-# Set the Sass partials directory, as we're using @imports
-sass:
-  style: :expanded # You might prefer to minify using :compressed
-
-# Use the following plug-ins
-gems:
-  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
-  - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
-
-# Exclude these files from your production _site
+# Build settings
 exclude:
   - Gemfile
   - Gemfile.lock
-  - LICENSE
   - README.md
-  - CNAME
+
+gems:
+  - jekyll-feed
+  - jekyll-assets
+exclude:
+  - Gemfile
+  - Gemfile.lock
+
+include: [_pages]
