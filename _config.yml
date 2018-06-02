@@ -1,6 +1,6 @@
 title: Smile Egbai
 description: > # this means to ignore newlines until "baseurl:"
-  Android developer with 4+ years experience, have knowledge of kotlin, java and golang.
+  Android engineer with 4+ years experience, have knowledge of kotlin, java and golang.
 baseurl: # the subpath of your site, e.g. /blog
 url: "https://smilecs.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 permalink: ':title/'
